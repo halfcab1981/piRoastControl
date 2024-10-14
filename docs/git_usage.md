@@ -2,11 +2,13 @@
 
 ## Initial Setup
 
-1. Open Terminal in your project folder.
-2. Type `git init` to start a new Git repository.
-3. Type `git config --global user.name "Your Name"` to set your name.
-4. Type `git config --global user.email "your.email@example.com"` to set your email.
+## Initial Setup
 
+1. Open Terminal in your project folder.
+2. Type `git init -b main` to start a new Git repository with 'main' as the default branch.
+3. Type `git config --global init.defaultBranch main` to set 'main' as the default for all future repositories.
+4. Type `git config --global user.name "Your Name"` to set your name.
+5. Type `git config --global user.email "your.email@example.com"` to set your email.
 ## Basic Workflow
 
 ### Checking Status

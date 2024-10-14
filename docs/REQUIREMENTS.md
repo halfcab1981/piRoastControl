@@ -169,3 +169,14 @@ Version Control: Use Git for code versioning, ensuring changes can be tracked, a
 Testing Procedures: Set up automated tests for the control scripts to validate trigger timing against known good states.
 This document serves as a comprehensive guide to initiate and manage the project, ensuring all key aspects are covered from hardware setup to software integration and control logic refinement.
 
+### Development Workflow
+
+1. Mount the Raspberry Pi filesystem using rclone:
+   ```
+   rclone mount pi:/home/kentboehm /Users/kentboehm/raspberry_pi_mount --vfs-cache-mode writes &
+   ```
+2. Open the mounted directory in Cursor IDE.
+3. Develop and test directly on the mounted filesystem.
+4. Use Warp terminal for executing commands on the Pi.
+5. Commit changes regularly using Git.
+6. Periodically create local backups for offline work or redundancy.
