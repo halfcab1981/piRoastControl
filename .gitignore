@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual Environment
+venv/
+env/
+*.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Configuration files (if they contain sensitive information)
+# config/settings.json
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Raspberry Pi specific
+*.img
+*.img.xz
+
+# rclone
+.rclone.conf
+
