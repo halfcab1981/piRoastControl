@@ -8,6 +8,15 @@ Fan: Independently controlled, basic inverted PWM control (100% duty cycle = 0% 
 Control Boards:
 Internal Board: Handles AC mains power, TRIAC triggering, and power distribution.
 External Controller Board: Provides user interface with dials and buttons for heat level, fan control, and timers. Detects zero cross on input wire from Internal Board, and times heater phase timing to TRIAC
+Connection between boards: 6 pin header on Internal Board, 6 pin header on controller Board. Pins are labeled and color coded as follows:
+Red - 5v power to external control board
+Black - ground
+Brown - "heat" control signal from controller board to internal board
+Blue  - "fan" control signal from controller board to internal board
+Yellow - "zero" provides 50hz AC signal from internal board to controller board
+Green - "NTC" provides some pulses at startup and mode changes. Not sure of exact purpose.
+
+
 1.2. Control Hardware:
 Primary Controller: Raspberry Pi model 3B
 
@@ -66,7 +75,7 @@ The zero-cross signal shows consistent 50Hz square wave behavior, confirming its
 
 ### Heater Control Signal Observations:
 
-Control signal patterns suggest synchronization with the zero-crossing, with short, consistent pulses indicating burst-phase control.
+Control signal patterns suggest synchronization with the zero-crossing, with short, consistent pulses indicating phase control.
 
 Inverted heat and fan signals
 Both heat and fan signals were observed to be inactive at "high" voltage. The fan is a simple PWM signal, where the duty cycle is varied to control the fan speed. 0% duty cycle corresponded to 100% fan power, and 100% duty cycle switches the fan off.

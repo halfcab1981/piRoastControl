@@ -1,0 +1,6 @@
+{
+  "zero_cross_pin": 17,
+  "triac_trigger_pin": 18,
+  "ac_frequency": 50
+}
+
