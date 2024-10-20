@@ -1,6 +1,9 @@
 {
+  "ntc_pin": 4,
   "zero_cross_pin": 17,
-  "triac_trigger_pin": 18,
-  "ac_frequency": 50
+  "heat_pin": 27,
+  "fan_pin": 18,
+  "ac_frequency": 50,
+  "pwm_frequency": 100
 }
 

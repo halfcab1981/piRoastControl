@@ -5,6 +5,17 @@ This document outlines the hardware specifications, functional and non-functiona
 1.1. Coffee Roaster:
 Heater: 220-240V, 100W controlled via a TRIAC.
 Fan: Independently controlled, basic inverted PWM control (100% duty cycle = 0% fan power).
+Fan has specific PWM duty cycles that correspond to specific fan speeds. They are:
+65% duty cycle = fan setting 1
+62% duty cycle = fan setting 2
+58% duty cycle = fan setting 3
+54% duty cycle = fan setting 4
+54% duty cycle = fan setting 5
+50% duty cycle = fan setting 6
+45% duty cycle = fan setting 7
+0% duty cycle = fan setting 8
+
+
 Control Boards:
 Internal Board: Handles AC mains power, TRIAC triggering, and power distribution.
 External Controller Board: Provides user interface with dials and buttons for heat level, fan control, and timers. Detects zero cross on input wire from Internal Board, and times heater phase timing to TRIAC
