@@ -53,3 +53,6 @@ Thumbs.db
 # rclone
 .rclone.conf
 
+# temp files
+.lgd-nfy0
+
